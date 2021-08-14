@@ -758,9 +758,15 @@ UniValue makeairdropfile(const UniValue& params, bool fHelp)
     const std::string bscAddress = params[0].get_str();
     const std::string airDropNumber = params[1].get_str();
     
-    std::regex re("^0x[0-9a-fA-F]{40}$");
-    std::smatch matchResult;
-    if(! std::regex_match(bscAddress, matchResult, re)) {
+    //std::regex re("^0x[0-9a-fA-F]{40}$");
+    //std::smatch matchResult;
+    //if(! std::regex_match(bscAddress, matchResult, re)) {
+        //throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid BSC address format.");
+    //}
+    
+    regex re("^0x[0-9a-fA-F]{40}$");
+    smatch matchResult;
+    if (! regex_match(bscAddress, matchResult, re)) {
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid BSC address format.");
     }
 
