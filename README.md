@@ -18,7 +18,7 @@ Since then, the Phore repository has been rebaselined to show the fork relations
 
 https://bitcointalk.org/index.php?topic=2307909.0
 
-Rebrand from KryptKoin [KTK] to Phore [PHR]
+Rebrand from KryptKoin [KTK] to Phore [PHR].
 
 ## Coin Specs ##
 <table>
