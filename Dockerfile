@@ -11,7 +11,7 @@ ENV RANDOM_PASS `pwgen -Bs1 12`
 ENV RPC_PASSWORD ${RPC_PASSWORD:-$RANDOM_PASS}
 
 # Build the project
-RUN wget https://github.com/phoreproject/Phore/releases/download/v1.2.0.0/phore-1.1.0-x86_64-linux-gnu.tar.gz -O phore-1.1.0.tar.gz
+RUN wget https://github.com/cryptotronxyz/Phore/releases/download/v1.2.0.0/phore-1.1.0-x86_64-linux-gnu.tar.gz -O phore-1.1.0.tar.gz
 RUN tar -xvf phore-1.1.0.tar.gz
 RUN mkdir -p /root/.phore/
 RUN echo "rpcuser=$RPC_USER\nrpcpassword=$RPC_PASSWORD" > /root/.phore/phore.conf

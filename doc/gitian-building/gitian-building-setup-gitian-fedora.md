@@ -80,8 +80,8 @@ Clone the git repositories for phore and Gitian.
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
 git clone https://github.com/phore/phore
-git clone https://github.com/phoreproject/gitian.sigs.git
-git clone https://github.com/phoreproject/phore-detached-sigs.git
+git clone https://github.com/cryptotronxyz/gitian.sigs.git
+git clone https://github.com/cryptotronxyz/phore-detached-sigs.git
 ```
 
 Setting up the Gitian image
